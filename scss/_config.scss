@@ -1,0 +1,102 @@
+$primary-color : #000;
+$secondary-color:#3195FF;
+$light-color:#fff;
+
+
+// Margin and padding
+
+@for $i from 1 to 6 {
+    .m-#{$i}{
+        margin: #{$i}rem;
+    }
+    .my-#{$i}{
+        margin: #{$i}rem 0;
+    }
+    .mx-#{$i}{
+        margin: 0 #{$i}rem ;
+    }
+    .p-#{$i}{
+        padding: #{$i}rem;
+    }
+    .py-#{$i}{
+        padding: #{$i}rem 0;
+    }
+    .px-#{$i}{
+        padding: 0 #{$i}rem ;
+    }
+}
+
+// Text colors
+
+.text-secondary{
+    color: $secondary-color;
+}
+.text-primary{
+    color: $primary-color;
+}
+.text-light{
+    color: #fff;
+}
+
+// buttons
+.btn{
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 1000;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: $primary-color;
+    color: #fff;
+}
+.btn-secondary{
+    background-color: $secondary-color;
+    color: #fff;
+}
+.btn-light{
+    background-color: #fff;
+    color: $primary-color;
+}
+// background colors
+.bg-primary{
+    background-color: $primary-color;
+}
+.bg-secondary{
+    background-color: $secondary-color;
+}
+.bg-light{
+    background-color: #fff;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+@mixin easeOut {
+    transition: all 0.4s ease-out;
+}
+
+@mixin mediaSm{
+    @media  screen and (max-width:500px) {
+        @content;
+    }
+}
+@mixin mediaMd{
+    @media  screen and (max-width:800px) {
+        @content;
+    }
+}
+@mixin mediaLg{
+    @media  screen and  (max-width:1170px) {
+        @content;
+    }
+}
+@mixin mediaXl{
+    @media  screen and (min-width:1171px) {
+        @content;
+    }
+}

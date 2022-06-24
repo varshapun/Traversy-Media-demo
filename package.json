@@ -1,0 +1,16 @@
+{
+  "name": "new-traversy-media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d Dist"
+  },
+  "author": "Varsha Punjabi",
+  "license": "ISC",
+  "homepage": "https://varshapun.github.com/Traversy-Media-demo",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+  
+}
