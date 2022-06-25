@@ -71,4 +71,11 @@ patronBtn.addEventListener("click",() => {
     window.open("https://www.patreon.com/traversymedia", '_blank');
 });
 
+// CLICKING ON BRANDING LOGO
+
+const navbarBranding = document.querySelector(".navbar-branding");
+navbarBranding.addEventListener("click",() => {
+    location.href="#";
+    
+});
 
